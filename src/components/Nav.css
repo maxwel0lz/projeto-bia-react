@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color:pink;
+    justify-content: center;
+    align-items: center;
+}
+#lista-util ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+#lista-util ul li{
+    display: flex;
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    
+}
+#logo img{
+    width: 10rem;
+} 
+
