@@ -6,7 +6,12 @@ function App() {
   
 
   return (
-    <Nav/>
+    <div className='flex justify-center items-center flex-col border'>
+      <Nav/>
+     
+    </div>
+    
+    
   )
 }
 
