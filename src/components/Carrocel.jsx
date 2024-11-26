@@ -1,14 +1,13 @@
 import React from "react";
 import { useState } from "react";
-
+import imgBanner1 from "../assets/banner.png"
 
 
 function Carrocel(){
   const images = [
-    "https://blog.venturas.com.br/wp-content/uploads/2017/07/104137-fotografia-outdoor-quer-dicas-de-como-tirar-fotos-de-paisagem.jpg",
-    "https://coisadefotografa.com/wp-content/uploads/2021/09/como-ter-fotos-mais-nitidas-scaled.jpg",
-    "https://static-cse.canva.com/blob/1173240/screen3.jpg",
-    "https://static.vecteezy.com/ti/fotos-gratis/t1/11215319-planeta-terra-com-nascer-do-sol-no-espaco-foto.jpg",
+    imgBanner1,
+    imgBanner1,
+    imgBanner1
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

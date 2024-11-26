@@ -20,7 +20,7 @@ function Home(){
 
             <div className="flex flex-col items-center text-center w-full bg-pink-300 text-black my-32 px-10 py-20 gap-3">
                 <h1 className="font-banner text-white text-6xl   ">Realce sua beleza natural e sinta-se confiante todos os dias! Suas sobrancelhas merecem cuidado especial</h1>
-                <h3 className="font-serif">Agende agora seu horario!</h3>
+                <h3 className="font-serif text-lg text">Agende agora seu horario!</h3>
                 <button 
                     className="font-semibold font-serif leading-none flex  text-pink-600 bg-gray-500 bg-opacity-25 border border-white hover:bg-pink-600 hover:text-white hover:border-white transition duration-150 ease-in-out mt-5"
                     type="button"
