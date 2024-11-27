@@ -9,7 +9,7 @@ function CardHome({srcImagem, ordem, desc}){
                 <img className="w-[500px] object-contain  rounded-lg" src={srcImagem} alt="" />
             </div>
 
-            <div className="flex flex-col items-start gap-3 w-[40%] max-lg:w-full max-lg:items-center  max-lg:text-justify text-left  col-span-2 p-10">
+            <div className="flex flex-col items-start gap-3 w-[40%] max-lg:w-full max-lg:items-center  max-lg:text-justify text-left  col-span-2 p-10 border rounded-lg shadow-right shadow-pink-400">
                 <h3 className="text-pink-800 text-3xl  font-bold">Design fio a fio</h3>
                 <p className="text-wrap text-gray-600 text-lg">{desc}</p>
 

@@ -21,15 +21,15 @@ function Carrocel(){
   };
 
   return (
-    <div className="flex flex-col items-center justify-start h-screen bg-gray-10 cursor-default my-2">
-      <div className="relative w-full h-[600px] overflow-hidden rounded-lg shadow-lg">
+    <div className="flex flex-col items-center justify-start bg-gray-10 cursor-default ">
+      <div className="relative w-full h-[100vh] max-lg:h-[70vh] max-md:h-[50vh] max-sm:h-[30vh] overflow-hidden rounded-lg shadow-lg">
         {/* Imagens */}
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Foto ${index + 1}`}
-            className={`absolute inset-0 w-full h-full  object-cover transition-transform duration-700 ${
+            className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 ${
               index === currentIndex ? "translate-x-0" : index < currentIndex ? "-translate-x-full" : "translate-x-full"
             }`}
           />
