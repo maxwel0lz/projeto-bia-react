@@ -1,8 +1,13 @@
 import { ArrowBigDown, LockKeyhole, MailIcon, UserPlus} from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import logoReduzida from "../assets/logo-reduzia.svg"
+import FormsLogin from "../components/FormsLogin";
+import FormsCadastro from "../components/FormsCadastro";
 const inputs = "flex gap-5 bg-gray-400 py-5 px-5 rounded-[4px] bg-opacity-25 w-[52%] items-center"
+const [tipoForm, setTipoForm] = useState(0)
+const logar = () => {tipoForm == 0? setTipoForm(1) : setTipoForm(0)}
 function Login(){
+
     return(
         <section className="flex flex-row w-full ">
             {/* Apresentação */}
@@ -15,7 +20,12 @@ function Login(){
                     <h2 className=" text-2xl   ">Acesse sua conta <br /> agora e aproveite!</h2>
                 </div>
                 <div className="flex flex-col font-serif font-bold gap-2 items-center ">
-                    <button className="bg-white text-pink-500 font-bold hover:border-white hover:bg-pink-500 hover:text-white transition-colors rounded-full px-16">LOGIN</button>
+                    <button 
+                        className="bg-white text-pink-500 font-bold hover:border-white hover:bg-pink-500 hover:text-white transition-colors rounded-full px-16"
+                        onClick={logar}
+                    >
+                        LOGIN
+                    </button>
                     <a className="text-white hover:underline hover:text-white hover:cursor-pointer">esqueceu a senha?</a>
                 </div>
 
@@ -24,18 +34,8 @@ function Login(){
             
             {/* Formulario */}
             <div className="flex flex-col text-black bg-white h-screen w-[58%] items-center justify-center gap-12">  
-                <div className="flex flex-col gap-3 items-center">
-                    <h1 className="text-pink-500 font-serif text-5xl">Crie sua conta</h1>
-                    <h2 className="font-serif text-black flex flex-row items-center " >Preencha seus dados <ArrowBigDown  size={20} strokeWidth={1} /></h2>
-                </div>
-                <form className="flex flex-col items-center gap-16 w-full" action="">
-                    <div className="flex flex-col gap-6 font-mono w-full items-center">
-                        <span className={inputs}><UserPlus color="#6b7280" size={22}/><input className="bg-transparent outline-none text-gray-60000 placeholder:text-gray-500 w-full h-full " type="text" placeholder="Nome" /></span>
-                        <span className={inputs}><MailIcon color="#6b7280" size={22}/><input className="bg-transparent outline-none text-gray-600 placeholder:text-gray-500 w-full h-full " type="email" placeholder="Email" /></span>
-                        <span className="flex gap-5 bg-gray-400 py-5 px-5 rounded-[4px] bg-opacity-25 w-[52%] items-center "><LockKeyhole color="#6b7280" size={22}/><input className=" bg-transparent outline-none text-gray-600 placeholder:text-gray-500 w-full h-full " type="password" placeholder="Senha" /></span>
-                    </div>
-                    <button className="bg-pink-500 text-white rounded-full px-12" type="submit">ENTRAR</button>
-                </form>
+                <FormsLogin />
+                <FormsCadastro />
             </div>
         </section>
     )
