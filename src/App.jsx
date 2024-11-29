@@ -4,7 +4,7 @@ import './App.css'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import Footer from './components/Footer'
+
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div className='w-full'>
       <Nav />
       <Home/>
-      <Footer/>
+      
       <Login/>
     </div>
     

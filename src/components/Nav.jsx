@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import logo from "../assets/logo-backgroudNone.png"
 
-function Nav() {
+function Nav(){
     const [menuOpen, setMenuOpen] = useState(false)
     const toggleMenu = () => {setMenuOpen(!menuOpen)}
     return (
