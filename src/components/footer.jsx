@@ -4,7 +4,7 @@ import {SendHorizontal} from 'lucide-react'
 
 function Footer() {
     return(
-        <footer className="flex flex-col bottom-0 w-full ">
+        <div className="flex flex-col bottom-0 w-full ">
             <div className="max-sm:flex-col max-sm:gap-3 bg-pink-600 flex justify-around py-10 px-7 font-mono ">                                        {/* Div principal */}
                 
                 <div className="flex flex-col max-sm:items-center text-white text-wrap">
@@ -44,7 +44,7 @@ function Footer() {
     
             </div>
             <div className="bg-gray-300 text-gray-600 flex justify-center text-center"> &copy; Desenvolvimento Maxwel Alves | contato.dev.maxwel@gmail.com</div> {/* Div copyright */}
-        </footer>
+        </div>
     )
 }
 
