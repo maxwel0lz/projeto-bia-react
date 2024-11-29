@@ -1,7 +1,7 @@
 import React from "react";
 import imgBia from '../assets/beatriz.png'
 import imgservico1 from '../assets/esfoliacao.jpeg'
-import CardHome from '../components/cardHome'
+import CardHome from '../components/CardHome'
 import Carrocel from '../components/Carrocel'
 
 function Home(){
