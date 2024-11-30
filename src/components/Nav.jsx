@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import logo from "../assets/logo-backgroudNone.png"
+import logo from "../assets/logo-backgroudReduzida.png"
 
 function Nav(){
     const [menuOpen, setMenuOpen] = useState(false)
