@@ -9,7 +9,7 @@ function Nav(){
     return (
         <nav className=' w-full '>
             <div className='  border w-full flex items-center justify-center columns-xl p-1.5 max-sm:justify-normal' >
-                <img className='w-40' src={logo} alt="" />
+                <Link to="/"><img className='w-40' src={logo} alt="" /></Link>
                 <div className='flex flex-row gap-10 absolute right-5 '>                              {/*BOX AVATAR*/}
                     <a className="max-sm:hidden flex flex-col items-center text-gray-700 hover:text-pink-600 text-sm font-mono font-bold" href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
