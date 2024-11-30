@@ -2,7 +2,7 @@ import React from "react";
 import telefone from '../assets/telefone.svg'
 import {SendHorizontal} from 'lucide-react'
 
-function Footer() {
+export const  Footer = () => {
     return(
         <div className="flex flex-col bottom-0 w-full ">
             <div className="max-sm:flex-col max-sm:gap-3 bg-pink-600 flex justify-around py-10 px-7 font-mono ">                                        {/* Div principal */}
@@ -48,4 +48,3 @@ function Footer() {
     )
 }
 
-export default Footer
