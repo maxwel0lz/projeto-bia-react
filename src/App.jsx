@@ -3,22 +3,26 @@ import './App.css'
 import Sobre from './components/Sobre'
 import Nav from './components/Nav'
 import Home from './pages/Home'
-import Footer from './components/Footer'
+import Down from './components/Down'
+import { Route, Routes } from 'react-router-dom'
 
-// import Login from './pages/Login'
+
+import Login from './pages/Login'
 
 
 
 function App() {
   
   return (
-    <div className='w-full'>
-      <Nav />
-      <Home/>
-      <Footer />
-      <Sobre />
-    </div>
-    
+    <>
+      <Nav/>
+      <Routes>
+        <Route path='/' element={ <Home/> }/>
+        <Route path='sobre' element={ <Sobre/> }/>
+        <Route path='login' element={ <Login/> }/>
+      </Routes>
+      <Down/>
+    </>
     
   )
 }

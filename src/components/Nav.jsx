@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import logo from "../assets/logo-backgroudReduzida.png"
+import { Link } from "react-router-dom";
 
 function Nav(){
     const [menuOpen, setMenuOpen] = useState(false)
@@ -76,11 +77,11 @@ function Nav(){
         )}
         <div className='bg-pink-600 max-sm:hidden'>
             <ul className='bg-pink-500 flex items-center justify-center gap-14 py-2 text-base font-black font-mono text-wrap '>
-                <li className="cursor-pointer text-white border-b-2">Home</li>
-                <li className="cursor-pointer text-white">Catalogo</li>
+                <Link className="font-bold" to="/"><li className="cursor-pointer text-white border-b-2">Home</li></Link>
+                <li  className="cursor-pointer text-white">Catalogo</li>
                 <li className="cursor-pointer text-white">Serviço</li>
                 <li className="cursor-pointer text-white">Promoções</li>
-                <li className="cursor-pointer text-white">Saiba Mais</li>
+                <Link className="font-bold" to="/sobre"><li className="cursor-pointer text-white">Saiba Mais</li></Link>
             </ul>
         </div>
     </nav>
