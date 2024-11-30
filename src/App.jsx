@@ -3,7 +3,8 @@ import './App.css'
 import Sobre from './components/Sobre'
 import Nav from './components/Nav'
 import Home from './pages/Home'
-import Down from './components/Down'
+import Footer from './components/Footer'
+
 // import Login from './pages/Login'
 
 
@@ -14,7 +15,7 @@ function App() {
     <div className='w-full'>
       <Nav />
       <Home/>
-      <Down />
+      <Footer />
       <Sobre />
     </div>
     
