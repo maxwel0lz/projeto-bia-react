@@ -18,8 +18,8 @@ function App() {
         <Nav/>
         <Routes>
           <Route path='/' element={ <Home/> }/>
-          <Route path='sobre' element={ <Sobre/> }/>
-          <Route path='login' element={ <Login/> }/>
+          <Route path='/sobre' element={ <Sobre/> }/>
+          <Route path='/login' element={ <Login/> }/>
         </Routes>
         <Down/>
     </>
