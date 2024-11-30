@@ -13,8 +13,8 @@ function Sobre() {
                     <p className="text-justify text-xl max-sm:text-lg text-shadow-sm  text-gray-700 font-serif">Transforme seu olhar com sobrancelhas perfeitamente desenhadas.  Seja para um design clássico ou moderno, nosso objetivo é proporcionar um resultado que harmonize com seu estilo e rosto. Agende sua sessão e sinta-se confiante com um visual renovado!</p>
                     <div className="flex items-center mt-8  justify-between">
                         <span className="flex flex-row gap-2 border-gray-300 border-r mr-7 pr-7 ">
-                            <a href=""><img src={iconIntagram} alt="" /></a>
-                            <a href=""><img src={iconWhatsapp} alt="" /></a>
+                            <a href="https://www.instagram.com/beatrizalvsbeauty/"><img src={iconIntagram} alt="link do instagram" /></a>
+                            <a href=""><img src={iconWhatsapp} alt="Link do whatsapp" /></a>
                         </span>
                         <button
                             className=" bg-pink-500 hover:border-white hover:bg-pink-600 duration-400 rounded-full px-5 text-xs text-white font-bold"

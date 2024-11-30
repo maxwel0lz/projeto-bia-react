@@ -1,8 +1,9 @@
 import './App.css'
 
 import Sobre from './components/Sobre'
-// import Nav from './components/Nav'
-// import Home from './pages/Home'
+import Nav from './components/Nav'
+import Home from './pages/Home'
+import Down from './components/Down'
 // import Login from './pages/Login'
 
 
@@ -10,12 +11,10 @@ import Sobre from './components/Sobre'
 function App() {
   
   return (
-    
     <div className='w-full'>
-      {/*<Nav />
+      <Nav />
       <Home/>
-      
-      <Login/>*/}
+      <Down />
       <Sobre />
     </div>
     
