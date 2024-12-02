@@ -52,18 +52,7 @@ function Carrocel(){
         </button>
       </div>
 
-      {/* Indicadores */}
-      <div className="flex space-x-2 mt-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-0.5 h-0.5 rounded-full ${
-              currentIndex === index ? "bg-pink-600" : "bg-gray-400"
-            }`}
-          ></button>
-        ))}
-      </div>
+      
     </div>
   )
 }
