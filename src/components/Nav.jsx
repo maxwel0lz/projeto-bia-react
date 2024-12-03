@@ -79,7 +79,7 @@ function Nav(){
             <ul className='bg-pink-500 flex items-center justify-center gap-14 py-2 text-base font-black font-mono text-wrap '>
                 <Link className="font-bold" to="/"><li className="cursor-pointer text-white border-b-2">Home</li></Link>
                 <Link className="font-bold" to="/catalogo"><li  className="cursor-pointer text-white">Catalogo</li></Link>
-                <li className="cursor-pointer text-white">Serviço</li>
+                <Link to="/teste"><li className="cursor-pointer text-white">Serviço</li></Link>
                 <li className="cursor-pointer text-white">Promoções</li>
                 <Link className="font-bold" to="/sobre"><li className="cursor-pointer text-white">Saiba Mais</li></Link>
             </ul>

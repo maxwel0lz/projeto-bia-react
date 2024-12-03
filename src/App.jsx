@@ -9,6 +9,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 
 import Login from './pages/Login'
 import Catalogo from './pages/Catalogo'
+import Teste from './components/Teste'
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/sobre' element={ <Sobre/> }/>
         <Route path='/login' element={ <Login/> }/>
         <Route path='/catalogo' element={ <Catalogo/> }/>
+        <Route path='/teste' element={ <Teste/> }/>
       </Routes>
       {!ocultar && <Down/>}
 
