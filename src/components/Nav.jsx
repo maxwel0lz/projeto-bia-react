@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import logo from "../assets/logo-backgroudReduzida.png"
 import { Link } from "react-router-dom";
+import { CalendarClock } from "lucide-react";
 
 function Nav(){
     const [menuOpen, setMenuOpen] = useState(false)
@@ -15,10 +16,9 @@ function Nav(){
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                     </svg>Minha Conta</Link>
-                    <a className="max-sm:hidden flex flex-col items-center text-gray-700 hover:text-pink-600 text-sm font-mono font-bold" href=""><svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg> Atendimento</a>
+                    <Link to="/agendamento" className="max-sm:hidden flex flex-col items-center text-gray-700 hover:text-pink-600 text-sm font-mono font-bold" href="">
+                        <CalendarClock strokeWidth={2.5} />
+                     Atendimento</Link>
                     <button
                     class="sm:hidden flex flex-col space-y-1 bg-pink-600"
                     onClick={toggleMenu}
@@ -79,8 +79,8 @@ function Nav(){
             <ul className='bg-pink-500 flex items-center justify-center gap-14 py-2 text-base font-black font-mono text-wrap '>
                 <Link className="font-bold" to="/"><li className="cursor-pointer text-white border-b-2">Home</li></Link>
                 <Link className="font-bold" to="/catalogo"><li  className="cursor-pointer text-white">Catalogo</li></Link>
-                <Link to="/teste"><li className="cursor-pointer text-white">Serviço</li></Link>
-                <li className="cursor-pointer text-white">Promoções</li>
+                <Link className="font-bold" to="/agendamento"><li className="cursor-pointer text-white">Serviço</li></Link>
+                <Link className="font-bold" to="/agendamento"><li className="cursor-pointer text-white">Promoções</li></Link>
                 <Link className="font-bold" to="/sobre"><li className="cursor-pointer text-white">Saiba Mais</li></Link>
             </ul>
         </div>

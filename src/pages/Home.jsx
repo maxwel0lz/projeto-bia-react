@@ -6,16 +6,18 @@ import Carrocel from '../components/Carrocel'
 
 function Home(){
     return(
-        <section>
+        <section className="flex flex-col justify-center gap-40 ">
             <Carrocel/>
             <CardHome 
+                titulo="Design Personalizado"
                 srcImagem={imgBia}
-                desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur iusto molestias quibusdam similique nulla obcaecati sit nesciunt! Nulla, tenetur. Dolore placeat accusantium maxime repudiandae deleniti ex modi, doloribus optio."}
-            />
-            <CardHome 
+                desc="Click em saiba mais e veja tudo sobre nosso serviço."
+                />
+            <CardHome
+                titulo="Hidrogloss" 
                 ordem={"order-1"}
-                desc={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, a non? Sed explicabo ipsum facere. Corrupti incidunt, sit, blanditiis dolores ab maiores, nulla asperiores illo architecto cum fuga in numquam."}
                 srcImagem={imgservico1}
+                desc="Click em saiba mais e veja tudo sobre nosso serviço."
             />
 
             <div className="flex flex-col items-center text-center w-full bg-pink-300 text-black my-32 px-10 py-20 gap-3">
