@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 function CardHome({titulo,srcImagem, ordem, desc}){
@@ -12,13 +13,14 @@ function CardHome({titulo,srcImagem, ordem, desc}){
             <div className="flex flex-col items-start gap-3  max-lg:w-full max-lg:items-center  max-lg:text-justify text-left  col-span-2 p-10  rounded-lg ">
                 <h3 className="uppercase text-shadow-md max-md:text-center text-pink-800 text-3xl  font-bold">{titulo}</h3>
                 <p className=" text-wrap text-shadow-md text-gray-600 text-lg">{desc}</p>
-
-                <button 
-                    className="font-semibold shadow-lg leading-none flex  text-gray-600 bg-transparent border border-pink-600 hover:bg-pink-600 hover:text-white hover:border-white transition duration-150 ease-in-out"
-                    type="button"
-                >
-                    Saiba Mais
-                </button>
+                <Link to="/catalogo">
+                    <button  
+                        className="font-semibold shadow-lg leading-none flex  text-gray-600 bg-transparent border border-pink-600 hover:bg-pink-600 hover:text-white hover:border-white transition duration-150 ease-in-out focus:outline-none"
+                        type="button"
+                        >
+                        Saiba Mais
+                    </button>
+                </Link>
             </div>
         </div>
 

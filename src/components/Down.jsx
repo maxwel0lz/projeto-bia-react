@@ -22,7 +22,7 @@ function Down() {
                         <span className="flex items-center gap-1"><MailIcon strokeWidth={2.5} size={18} color="black" />Email:<strong>biadesigns@gmail.com</strong></span>
                     </div>
                     <p>Atendimento de Ter a Sab <br/> 08h as 21h</p>
-                    <a className="text-white hover:underline hover:text-white cursor-pointer">Agendar</a>
+                    <a href="https://w.app/biadesigns" className="text-white hover:underline hover:text-white cursor-pointer">Agendar</a>
                 </div>
                
                 <div className="flex flex-col max-sm:items-center text-white text-wrap">

@@ -13,9 +13,11 @@ function CardCatalogo({titulo,tipo, descricao, imagem}) {
                 <p className=" text-gray-600 text-lg text-shadow-md max-sm:text-base">{descricao}</p>
                     
                 <button 
-                    className="shadow-lg font-semibold leading-none flex  text-gray-600 bg-transparent border border-pink-600 hover:bg-pink-600 hover:text-white hover:border-white transition duration-150 ease-in-out"
+                    className="focus:outline-none shadow-lg font-semibold leading-none flex  text-gray-600 bg-transparent border border-pink-600 hover:bg-pink-600 hover:text-white hover:border-white transition duration-150 ease-in-out"
                     type="button"
+                    onClick={() => window.location.href=("https://w.app/biadesigns")}
                 >
+
                     AGENDAR
                 </button>
             </div>

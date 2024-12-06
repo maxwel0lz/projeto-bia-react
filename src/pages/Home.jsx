@@ -26,6 +26,7 @@ function Home(){
                 <button 
                     className="font-semibold font-serif leading-none flex  text-pink-600 bg-gray-500 bg-opacity-25 border border-white hover:bg-pink-600 hover:text-white hover:border-white transition duration-150 ease-in-out mt-5"
                     type="button"
+                    onClick={() => window.location.href=("https://w.app/biadesigns")}
                 >
                     AGENDAR
                 </button>
