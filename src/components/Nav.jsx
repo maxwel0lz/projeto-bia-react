@@ -45,30 +45,30 @@ function Nav(){
 
                     <span className="flex flex-col gap-5 justify-center border ">
                         <h3 className="text-2xl  font-bold text-gray-800">Usuario</h3>
-                        <a className="flex gap-2 ml-3 text-gray-800 hover:text-gray-500" href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <Link to="/login" className="flex gap-2 ml-3 text-gray-800 hover:text-gray-500" href="" onClick={toggleMenu}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                             </svg>Minha Conta
-                        </a>
-                        <a className="flex gap-2 ml-3  text-gray-800 hover:text-gray-500" href=""><svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        </Link >
+                        <Link  to="/agendamento" onClick={toggleMenu} className="flex gap-2 ml-3  text-gray-800 hover:text-gray-500" href=""><svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                         </svg> Atendimento
-                        </a>
+                        </Link>
                     </span>
                     <span className="flex flex-col gap-5 justify-center border">
                         <h3 className="text-2xl  font-bold text-gray-800">Navegar</h3>
-                        <a href="#" className="block ml-3 text-gray-800 hover:text-gray-500">
-                            Serviços
-                        </a>
-                        <a href="#" className="block ml-3 text-gray-800 hover:text-gray-500">
-                            Contato
-                        </a>
+                        <Link to="/catalogo"  onClick={toggleMenu} className="block ml-3 text-gray-800 hover:text-gray-500">
+                            Catalogo
+                        </Link>
+                        <Link to="/sobre" onClick={toggleMenu} className="block ml-3 text-gray-800 hover:text-gray-500">
+                            Sobre
+                        </Link>
                     </span>
                 </div>
                 <button
-                onClick={toggleMenu}
-                className="mt-6 block bg-pink-500 text-white py-2 px-4 rounded-lg"
+                    onClick={toggleMenu}
+                    className="mt-6 block bg-pink-500 text-white py-2 px-4 rounded-lg"
                 >
                 Fechar
                 </button>
@@ -80,7 +80,7 @@ function Nav(){
                 <Link className="font-bold" to="/"><li className="cursor-pointer text-white border-b-2">Home</li></Link>
                 <Link className="font-bold" to="/catalogo"><li  className="cursor-pointer text-white">Catalogo</li></Link>
                 <Link className="font-bold" to="/agendamento"><li className="cursor-pointer text-white">Serviço</li></Link>
-                <Link className="font-bold" to="/agendamento"><li className="cursor-pointer text-white">Promoções</li></Link>
+                <Link className="font-bold hidden" to="/agendamento"><li className="cursor-pointer text-white">Promoções</li></Link>
                 <Link className="font-bold" to="/sobre"><li className="cursor-pointer text-white">Saiba Mais</li></Link>
             </ul>
         </div>

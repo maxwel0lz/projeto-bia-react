@@ -1,6 +1,8 @@
 import React from "react";
 import telefone from '../assets/telefone.svg'
-import {SendHorizontal} from 'lucide-react'
+import {MailIcon, SendHorizontal} from 'lucide-react'
+import iconIntagram from '../assets/icon-instagram.svg'
+import iconWhatsapp from '../assets/icon-whatsapp.svg'
 
 function Down() {
     return(
@@ -15,10 +17,9 @@ function Down() {
                 </div>
                 <div className="flex flex-col max-sm:items-center text-white text-wrap">
                     <h3 className="text-xl">ATENDIMENTO</h3>
-                    <div className="border-b border-b-gray-300 ">
-                        <span className="flex"><img src={telefone} alt="" />Telefone</span>
-                        <span className="flex"><img src={telefone} alt="" />Telefone</span>
-                        <span className="flex"><img src={telefone} alt="" />Telefone</span>
+                    <div className="border-b border-b-gray-300 mb-2 pb-2 ">
+                        <span className="flex items-center gap-1 "><img src={telefone} alt="" />Telefone:<strong>(71)991414494</strong></span>
+                        <span className="flex items-center gap-1"><MailIcon strokeWidth={2.5} size={18} color="black" />Email:<strong>biadesigns@gmail.com</strong></span>
                     </div>
                     <p>Atendimento de Ter a Sab <br/> 08h as 21h</p>
                     <a className="text-white hover:underline hover:text-white cursor-pointer">Agendar</a>
@@ -27,8 +28,8 @@ function Down() {
                 <div className="flex flex-col max-sm:items-center text-white text-wrap">
                     <h3 className="text-xl">REDES SOCIAIS</h3>
                     <div>
-                        <span className="flex"><img src={telefone} alt="" />Telefone</span>
-                        <span className="flex"><img src={telefone} alt="" />Telefone</span>
+                        <a className="flex items-center cursor-pointer text-white hover:text-gray-400  hover:underline"><img src={iconIntagram} alt="" />Instagram</a>
+                        <a className="flex items-center cursor-pointer text-white hover:text-gray-400 hover:underline"><img src={iconWhatsapp} alt="" />WhatsApp</a>
                     </div>
                 </div>
                 <div className="flex flex-col max-sm:items-center text-white text-wrap">

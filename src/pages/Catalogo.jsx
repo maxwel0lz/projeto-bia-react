@@ -5,7 +5,7 @@ import designSobraselha from '../assets/designSobranselha.jpeg'
 function Catalogo() {
     
   return (
-    <div className='flex flex-col items-center bg-pink-50 max-sm:p-10 p-20'>
+    <div className='flex flex-col items-center bg-pink-100 gap-20 max-sm:p-10 p-20'>
       <CardCatalogo
         imagem={designSobraselha}
         titulo={"Design Personalizado"}
