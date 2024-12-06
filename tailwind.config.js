@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
+const textShadow = require('tailwindcss-textshadow');
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   plugins: [
-    require("tailwindcss-textshadow")
+    textShadow,
   ],
   theme: {
     extend: {
