@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
-const textShadow = require('tailwindcss-textshadow');
+import textShadow from "tailwindcss-textshadow"
 export default {
   content: [
     "./index.html",
